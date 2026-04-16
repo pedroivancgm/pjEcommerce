@@ -1,22 +1,23 @@
-Este é um projeto pessoal para fins de aprendizado.
-A maior parte dos conteúdos de Frontend foram gerados por IA, na maioria das vezes somente ajustados por mim.
-
-Se você quer testar o aplicativo, no vscode você precisará de dois terminais.
-Primeiro terminal:
-cd frontend
-npm run dev
-acessar a url local para vizualizar o frontend
-
-Segundo terminal:
-cd backend
-rails s
-
+Este é um projeto pessoal para fins de aprendizado.<br>
+A maior parte dos conteúdos de Frontend foram gerados por IA, na maioria das vezes somente ajustados por mim.<br>
 =================================================================
+<br>
+Se você quer testar o aplicativo, no vscode você precisará de dois terminais.<br>
+Primeiro terminal: <br>
+cd frontend<br>
+npm run dev<br>
+acessar a url local para vizualizar o frontend<br>
+<br>
+Segundo terminal:<br>
+cd backend<br>
+rails s<br>
+<br>
 
-Após isso é só testar com as funcionalidades implementadas até agora (16/04/2026)
-
-Funcionalidades à serem implementadas:
-Página própria de carrinho
-Página própria de produtos anunciados
-
-Possibilidade de deletar produtos anunciados
+<br>
+Após isso é só testar com as funcionalidades implementadas até agora (16/04/2026)<br>
+<br>
+Funcionalidades à serem implementadas:<br>
+Página própria de carrinho<br>
+Página própria de produtos anunciados<br>
+<br>
+Possibilidade de deletar produtos anunciados<br>
