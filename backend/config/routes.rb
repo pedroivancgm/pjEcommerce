@@ -8,4 +8,9 @@ Rails.application.routes.draw do
   post "/register", to: "auth#register"
   post "/login", to: "auth#login"
   get "/profile", to: "auth#profile"
+
+
+  post "/cart/add", to: "cart#add_prod"
+  post "/cart/remove", to: "cart#remove_prod"
+  get "/cart/show", to: "cart#show_cart"
 end

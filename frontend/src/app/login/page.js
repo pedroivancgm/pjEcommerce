@@ -21,7 +21,7 @@ export default function LoginPage() {
       });
 
       localStorage.setItem("token", res.data.token);
-      router.push("/dashboard");
+      router.push("/comprar");
     } catch (err) {
       alert("Erro no login");
     }

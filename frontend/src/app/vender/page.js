@@ -74,7 +74,7 @@ export default function VenderPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6">
+    <div className="min-h-screen flex items-center justify-center p-6 scale-90">
 
       <div className="w-full max-w-2xl bg-zinc-800 p-8 rounded-2xl shadow-lg">
         

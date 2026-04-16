@@ -10,7 +10,9 @@ async function getProducts() {
   if (!res.ok) return []; // Retorna lista vazia se o Rails estiver offline
   return res.json();
 }
-
+async function addToCart(){
+  const res = await fetch("http://localhost:3000/cart/add")
+}
 export default async function ComprarPage() {
   const products = await getProducts();
 

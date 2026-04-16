@@ -1,5 +1,5 @@
 class ProductController < ApplicationController
-  before_action :authorized, only: [:create]
+  before_action :authorized, only: [:create, :destroy]
 
   def index 
     product = Product.all 
@@ -11,11 +11,18 @@ class ProductController < ApplicationController
     if product.save
       render json: product, status: :created
     else
-      render json: :errors , status: :unprocessable_entity
+      render json: product.errors , status: :unprocessable_entity
     end
   end
 
-
+  def destroy
+    product = current_user.products.find(params[:id])
+    if product.destroy
+      render json: "Produto deletado", status: 204
+    else
+      render json: "Não foi possível deletar o producto", status: :unprocessable_entity
+    end
+  end
 
   private
   def product_params
