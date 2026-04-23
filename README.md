@@ -1,6 +1,7 @@
 Este é um projeto pessoal para fins de aprendizado.<br>
-A maior parte dos conteúdos de Frontend foram gerados por IA, na maioria das vezes somente ajustados por mim.<br>
+
 =================================================================
+<h1>A maior parte dos conteúdos de Frontend foram gerados por IA, na maioria das vezes somente ajustados por mim.<br></h1>
 <br>
 Se você quer testar o aplicativo, no vscode você precisará de dois terminais.<br>
 Primeiro terminal: <br>
