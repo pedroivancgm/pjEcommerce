@@ -25,7 +25,9 @@ class CartController < ApplicationController
         product_id: params[:product_id],
         quantity: 1
       )
+      render json: { message: "Produto adicionado", item: item }, status: :ok
     end
+
   end
 
   def remove_prod

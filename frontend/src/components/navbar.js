@@ -60,9 +60,6 @@ const Navbar = () => {
           {/* Carrinho */}
           <Link href="/carrinho" className="relative p-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-full transition-colors">
             <ShoppingCart size={24} />
-            <span className="absolute -top-1 -right-1 bg-indigo-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white">
-              0
-            </span>
           </Link>
 
           {/* Auth */}

@@ -2,10 +2,6 @@
 class AuthController < ApplicationController
   def register
     user = User.new(user_params)
-
-    p user.password
-    p user.email
-
     if user.save
       token = encode_token({ user_id: user.id })
       render json: { user: user, token: token }, status: :created
@@ -23,6 +19,10 @@ class AuthController < ApplicationController
     else
       render json: { error: "Credenciais inválidas" }, status: :unauthorized
     end
+  end
+
+  def logout
+   
   end
 
   def profile
