@@ -17,7 +17,7 @@ rails s<br>
 Após isso é só testar com as funcionalidades implementadas até agora (16/04/2026)<br>
 <br>
 Funcionalidades à serem implementadas:<br>
-Página própria de carrinho<br>
+Página própria de carrinho (implementado no dia 23/04/2026)<br>
 Página própria de produtos anunciados<br>
 <br>
 Possibilidade de deletar produtos anunciados<br>
