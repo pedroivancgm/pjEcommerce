@@ -7,20 +7,29 @@ class ProductController < ApplicationController
   end
 
   def create 
-    product = current_user.products.new(product_params)
-    if product.save
-      render json: product, status: :created
+    result = Products::CreateProduct.call(
+      current_user: current_user,
+    product_params: product_params
+    )
+
+    if result.success?
+      render json: result.product, status: :created
     else
-      render json: product.errors , status: :unprocessable_entity
+      render json: result.errors, status: :unprocessable_entity
     end
   end
 
+
   def destroy
-    product = current_user.products.find(params[:id])
-    if product.destroy
+    result = Products::DestroyProduct.call(
+      current_user: current_user,
+      product_params: params[:id]
+    )
+
+    if result.success?
       render json: "Produto deletado", status: 204
     else
-      render json: "Não foi possível deletar o producto", status: :unprocessable_entity
+      render json: result.errors , status: :unprocessable_entity
     end
   end
 

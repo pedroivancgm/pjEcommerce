@@ -11,13 +11,12 @@ class AuthController < ApplicationController
   end
 
   def login
-    user = User.find_by(email: params[:email])
+    result = Auth::Login.call(email: params[:email], password: params[:password])
 
-    if user&.authenticate(params[:password])
-      token = encode_token({ user_id: user.id })
-      render json: { user: user, token: token }, status: :ok
+    if result.success?
+      render json: { user: result.user, token: result.token }, status: :ok
     else
-      render json: { error: "Credenciais inválidas" }, status: :unauthorized
+      render json: { error: result.error }, status: :unauthorized
     end
   end
 

@@ -5,9 +5,11 @@ one:
   price: 9.99
   category: MyString
   description: MyText
+  user: one
 
 two:
   name: MyString
   price: 9.99
   category: MyString
   description: MyText
+  user: two
